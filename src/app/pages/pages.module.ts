@@ -12,6 +12,7 @@ import { BrowserModule } from '@angular/platform-browser';
 // temporal
 import { IncrementadorComponent} from '../components/incrementador/incrementador.component';
 import { GraficaDonutComponent } from '../components/grafica-donut/grafica-donut.component';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
 	declarations : [
@@ -20,7 +21,8 @@ import { GraficaDonutComponent } from '../components/grafica-donut/grafica-donut
 		Graficas1Component,
 		PagesComponent,
 		IncrementadorComponent,
-		GraficaDonutComponent
+		GraficaDonutComponent,
+		AccountSettingsComponent
 	],
 	exports : [
 		DashboardComponent,
