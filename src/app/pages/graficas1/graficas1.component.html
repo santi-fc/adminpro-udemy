@@ -1,3 +1,61 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+
+
+  <div class="col-6">
+	  <div class="card">
+		  <div class="card-body">
+
+			 <app-grafica-donut
+			 		[doughnutChartType]="graficos.grafico1.type"
+			 		[doughnutChartData]="graficos.grafico1.data"
+					[doughnutChartLabels]="graficos.grafico1.labels"
+					[leyenda]="graficos.grafico1.leyenda" ></app-grafica-donut>
+
+		  </div>
+	  </div>
+  </div>
+
+  <div class="col-6">
+	<div class="card">
+		<div class="card-body">
+
+		   <app-grafica-donut
+				  [doughnutChartType]="graficos.grafico2.type"
+				  [doughnutChartData]="graficos.grafico2.data"
+				  [doughnutChartLabels]="graficos.grafico2.labels"
+				  [leyenda]="graficos.grafico2.leyenda" ></app-grafica-donut>
+
+		</div>
+	</div>
+  </div>
+
+  <div class="col-6">
+	<div class="card">
+		<div class="card-body">
+
+		   <app-grafica-donut
+				  [doughnutChartType]="graficos.grafico3.type"
+				  [doughnutChartData]="graficos.grafico3.data"
+				  [doughnutChartLabels]="graficos.grafico3.labels"
+				  [leyenda]="graficos.grafico3.leyenda" ></app-grafica-donut>
+
+		</div>
+	</div>
+  </div>
+
+  <div class="col-6">
+	<div class="card">
+		<div class="card-body">
+
+		   <app-grafica-donut
+				  [doughnutChartType]="graficos.grafico4.type"
+				  [doughnutChartData]="graficos.grafico4.data"
+				  [doughnutChartLabels]="graficos.grafico4.labels"
+				  [leyenda]="graficos.grafico4.leyenda" ></app-grafica-donut>
+
+		</div>
+	</div>
+  </div>
+
+
+</div>

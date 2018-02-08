@@ -4,7 +4,12 @@
             <div class="card-body">
                 <h4 class="card-title">Barra de progreso</h4>
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValuenow]="progreso" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso + '%'"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" [attr.ariaValuenow]="progreso_1" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso_1 + '%'"></div>
+                </div>
+
+				<br />
+				<div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" [attr.ariaValuenow]="progreso_2" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" [style.width]="progreso_2 + '%'"></div>
                 </div>
             </div>
         </div>
@@ -18,15 +23,7 @@
         <div class="card">
             <div class="card-body">
 
-                <div class="input-group">
-                    <span class="input-group-btn">
-                      <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)"><i class="mdi mdi-minus"></i></button>
-                    </span>
-                    <input type="text" class="form-control" [(ngModel)]="progreso" name="progreso">
-                    <span class="input-group-btn">
-                        <button class="btn btn-primary" type="button" (click)="cambiarValor(5)" ><i class="mdi mdi-plus"></i></button>
-                      </span>
-                </div>
+               <app-incrementador (cambioValor)="progreso_1 = $event" [leyenda]="'hola ke ase'" [progreso]="progreso_1"></app-incrementador>
 
             </div>
         </div>
@@ -36,7 +33,7 @@
         <div class="card">
             <div class="card-body">
 
-                texto 2
+                <app-incrementador (cambioValor)="progreso_2 = $event" [leyenda]="'hola ke ase tú'" [progreso]="progreso_2" ></app-incrementador>
 
             </div>
         </div>
